@@ -20,7 +20,7 @@ export default function Home() {
 //   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="h-[100svh] md:h-[70dvh] lg:h-[100dvh] bg-gray-50">
       {/* Test Button for Language Modal - Remove in production */}
       {/* <button
         onClick={testLanguageModal}
