@@ -16,13 +16,13 @@ export function useLanguage() {
       setSelectedLanguage(storedLanguage);
       // Only change locale if it's different and router is ready
       if (router.isReady && router.locale !== storedLanguage) {
-        router.push(router.asPath, router.asPath, { locale: storedLanguage });
+        router.push(router.asPath, router.asPath, { locale: storedLanguage, shallow: false });
       }
     } else {
       // Show language selection modal if no language is stored
       setShowLanguageModal(true);
     }
-  }, [router.isReady, router.locale, router.asPath]);
+  }, [router.isReady, router.locale]);
 
   const selectLanguage = (language: Language) => {
     // Store the selected language
@@ -30,9 +30,12 @@ export function useLanguage() {
     setSelectedLanguage(language);
     setShowLanguageModal(false);
     
-    // Change the locale using next-i18next router without reload
+    // Change the locale using next-i18next router and reload to ensure translations update
     if (router.locale !== language) {
-      router.push(router.asPath, router.asPath, { locale: language });
+      router.push(router.asPath, router.asPath, { locale: language, shallow: false }).then(() => {
+        // Force reload to ensure translations are properly loaded
+        window.location.reload();
+      });
     }
   };
 

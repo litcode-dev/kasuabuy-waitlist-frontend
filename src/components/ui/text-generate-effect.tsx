@@ -34,7 +34,7 @@ export const TextGenerateEffect = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope} className="text-[40px] lg:text-[54px] font-medium" >
+      <motion.div ref={scope} className="text-[40px] lg:text-[54px] font-bold" >
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
