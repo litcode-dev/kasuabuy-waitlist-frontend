@@ -2,11 +2,6 @@ import type { NextConfig } from "next";
 const { i18n } = require('./next-i18next.config');
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  trailingSlash: true,
-  images: {
-    unoptimized: true,
-  },
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://api.kasuabuy.com',
   },

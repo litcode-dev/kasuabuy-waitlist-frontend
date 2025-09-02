@@ -16,7 +16,7 @@ export default function HeroSection() {
     return (
         <div
             id="hero"
-            className="relative overflow-hidden bg-white pt-32 md:pt-52 px-4 min-h-screen"
+            className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-32 md:pt-52 px-4"
         >
 
             <motion.div
@@ -73,7 +73,7 @@ export default function HeroSection() {
 
 
             <div className="flex justify-center mt-[200px] z-50">
-                <div className="absolute top-1/2 h-[50dvh] w-[60dvw]">
+                <div className="absolute top-1/2 w-[60dvw]">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{
