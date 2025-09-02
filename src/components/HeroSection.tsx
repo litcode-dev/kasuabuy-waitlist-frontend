@@ -68,7 +68,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-[200px] z-50 ">
+      <div className="flex justify-center mt-[100px]  md:mt-[100px] lg:mt-[200px] z-50 ">
         <div className="absolute bottom-0 w-[60dvw]">
           <motion.div
             initial={{ opacity: 0 }}
@@ -83,7 +83,7 @@ export default function HeroSection() {
               opacity: { duration: 0.6, delay: 0.2 },
               x: { duration: 0.3, repeat: Infinity, repeatDelay: 5 }
             }}
-            className="bg-[#FDF5FF] h-[2rem] lg:h-[3.5rem] px-3 lg:px-5  flex justify-center items-center shadow-2xl rounded-full  text-[#5F017B] absolute bottom-0 lg:bottom-52 -translate-y-1/2 left-48 lg:left-36 z-15 text-[10px] lg:text-sm"
+            className="bg-[#FDF5FF] h-[2rem] lg:h-[3.5rem] px-3 lg:px-5  flex justify-center items-center shadow-2xl rounded-full  text-[#5F017B] absolute bottom-[17vh]  md:bottom-[12vh]  lg:bottom-52 -translate-y-1/2 left-0 md:left-28 lg:left-36 z-15 text-[10px] lg:text-sm"
           >
             <span className="flex items-center justify-center gap-2">
               <CircleCheck className="w-3 h-3 lg:w-6 lg:h-6 text-[#5F017B]" />{" "}
@@ -106,7 +106,7 @@ export default function HeroSection() {
               opacity: { duration: 0.6, delay: 0.4 },
               x: { duration: 0.3, repeat: Infinity, repeatDelay: 7 }
             }}
-            className="bg-[#FDF5FF] h-[2rem] lg:h-[3.5rem] px-3 lg:px-5  flex justify-center items-center shadow-2xl rounded-full text-[#5F017B] absolute bottom-[2rem] -left-8 lg:left-42 z-15 text-[10px] lg:text-sm"
+            className="bg-[#FDF5FF] h-[2rem] lg:h-[3.5rem] px-3 lg:px-5  flex justify-center items-center shadow-2xl rounded-full text-[#5F017B] absolute bottom-[5vh] md:bottom-[3vh] lg:bottom-[5vh] -left-8 md:left-24 lg:left-42 z-15 text-[10px] lg:text-sm"
           >
             <span className="flex items-center justify-center gap-2">
               <CircleCheck className="w-3 h-3 lg:w-6 lg:h-6 text-[#5F017B]" />{" "}
@@ -128,7 +128,7 @@ export default function HeroSection() {
                             opacity: { duration: 0.6, delay: 0.6 },
                             x: { duration: 0.3, repeat: Infinity, repeatDelay: 9 }
                         }}
-                        className="bg-[#FDF5FF] h-[1.5rem] lg:h-[3.5rem] px-3 lg:px-5 flex justify-center items-center shadow-2xl rounded-full text-[#5F017B]  absolute bottom-[15vh] lg:bottom-[25vh] -translate-y-1/2 -right-5  lg:right-92 z-15 text-[10px] lg:text-sm"
+                        className="bg-[#FDF5FF] h-[1.5rem] lg:h-[3.5rem] px-3 lg:px-5 flex justify-center items-center shadow-2xl rounded-full text-[#5F017B]  absolute bottom-[20vh] md:bottom-[14vh] lg:bottom-[25vh] -translate-y-1/2 -right-5 md:right-36 lg:right-92 z-15 text-[10px] lg:text-sm"
                     >
                         <span className="flex items-center justify-center gap-2">
                             <CircleCheck className="w-3 h-3 lg:w-6 lg:h-6 text-[#5F017B]" />{" "}
@@ -152,7 +152,7 @@ export default function HeroSection() {
                             opacity: { duration: 0.6, delay: 0.8 },
                             x: { duration: 0.3, repeat: Infinity, repeatDelay: 11 }
                         }}
-                        className="bg-[#FDF5FF] h-[1.5rem] lg:h-[3.5rem] px-3 lg:px-5 flex justify-center items-center shadow-2xl rounded-full text-[#5F017B] absolute bottom-[15vh] md:bottom-[5vh] -translate-y-10/12  lg:right-48 z-15 text-[10px] lg:text-sm"
+                        className="bg-[#FDF5FF] h-[1.5rem] lg:h-[3.5rem] px-3 lg:px-5 flex justify-center items-center shadow-2xl rounded-full text-[#5F017B] absolute bottom-[1vh] md:bottom-[1vh] lg:bottom-[5vh] -translate-y-10/12 -right-5 md:right-20 lg:right-48 z-15 text-[10px] lg:text-sm"
                     >
                         <span className="flex items-center justify-center gap-2">
                             <CircleCheck className="w-3 h-3 lg:w-6 lg:h-6 text-[#5F017B]" />{" "}
@@ -164,7 +164,7 @@ export default function HeroSection() {
         </div>
 
         <motion.div
-          className=" w-[321px] h-[321px] lg:w-[541px] lg:h-[541px] bg-[#FFCC00] rounded-full"
+          className="absolute w-[321px]  -bottom-42 md:-bottom-26 lg:-bottom-26 h-[321px]  md:w-[321px] md:h-[321px] lg:w-[541px] lg:h-[541px] bg-[#FFCC00] rounded-full"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{
@@ -203,7 +203,7 @@ export default function HeroSection() {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="absolute bottom-0 ml-[10rem] md:ml-[20rem] z-10 h-[160px] w-[179px] lg:h-[350px] lg:w-[400px]"
+            className="absolute bottom-0 ml-[10rem] md:ml-[12rem] lg:ml-[20rem] z-10 h-[160px] w-[179px] lg:h-[350px] lg:w-[400px]"
           >
             <Image
               src={"/right-woman.png"}
