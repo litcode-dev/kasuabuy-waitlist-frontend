@@ -164,7 +164,7 @@ export default function HeroSection() {
         </div>
 
         <motion.div
-          className="absolute w-[321px]  -bottom-42 md:-bottom-26 lg:-bottom-26 h-[321px]  md:w-[321px] md:h-[321px] lg:w-[541px] lg:h-[541px] bg-[#FFCC00] rounded-full"
+          className="absolute   -bottom-42 md:-bottom-26 lg:-bottom-26 h-[281px] w-[281px]  md:w-[321px] md:h-[321px] lg:w-[541px] lg:h-[541px] bg-[#FFCC00] rounded-full"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{
@@ -180,7 +180,7 @@ export default function HeroSection() {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="absolute bottom-0  mr-[15rem] lg:mr-[30rem] z-10 h-[160px] w-[179px] lg:h-[400px] lg:w-[450px]"
+            className="absolute bottom-0  mr-[15rem] lg:mr-[30rem] z-10 h-[140px] w-[159px] md:h-[160px] md:w-[179px] lg:h-[400px] lg:w-[450px]"
           >
             <Image
               src={"/left-woman.png"}
@@ -194,7 +194,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="z-[10] h-[200px] w-[279px] lg:h-[450px] lg:w-[550px]"
+            className="z-[10] h-[160px] w-[239px] md:h-[200px] md:w-[279px] lg:h-[450px] lg:w-[550px]"
           >
             <Image src={"/man.png"} width={550} height={550} alt="man" />
           </motion.div>
@@ -203,7 +203,7 @@ export default function HeroSection() {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="absolute bottom-0 ml-[10rem] md:ml-[12rem] lg:ml-[20rem] z-10 h-[160px] w-[179px] lg:h-[350px] lg:w-[400px]"
+            className="absolute bottom-0 ml-[10rem] md:ml-[12rem] lg:ml-[20rem] z-10 h-[140px] w-[159px] md:h-[160px] md:w-[179px] lg:h-[350px] lg:w-[400px]"
           >
             <Image
               src={"/right-woman.png"}
