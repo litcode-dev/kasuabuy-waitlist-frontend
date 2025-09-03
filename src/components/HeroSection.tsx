@@ -164,7 +164,7 @@ export default function HeroSection() {
         </div>
 
         <motion.div
-          className="absolute   -bottom-42 md:-bottom-26 lg:-bottom-26 h-[281px] w-[281px]  md:w-[321px] md:h-[321px] lg:w-[541px] lg:h-[541px] bg-[#FFCC00] rounded-full"
+          className="absolute   -bottom-52 md:-bottom-26 lg:-bottom-26 h-[321px] w-[321px]  md:w-[321px] md:h-[321px] lg:w-[541px] lg:h-[541px] bg-[#FFCC00] rounded-full"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{
