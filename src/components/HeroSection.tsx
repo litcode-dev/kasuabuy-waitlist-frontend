@@ -16,7 +16,7 @@ export default function HeroSection() {
   return (
     <div
       id="hero"
-      className="relative h-[100svh] md:h-[70dvh] lg:h-[100dvh] w-full overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-32 md:pt-52 px-4"
+      className="relative h-[clamp(70vh,100vh,100vh)] w-full overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-[clamp(4rem,24vh,13rem)] px-4"
     >
       <motion.div
         className="absolute hidden lg:flex top-1/2 right-2 translate-x-1 -translate-y-1/2 z-0 "
@@ -32,7 +32,7 @@ export default function HeroSection() {
           className="z-0"
         />
       </motion.div>
-      <div className="max-w-6xl md:pt-0 pt-16 mx-auto z-20">
+      <div className="max-w-6xl pt-10  sm:pt-10 md:pt-0  mx-auto z-20">
         <div className="text-center mb-12">
           {/* Main Heading with Text Generate Effect */}
           <div className="mb-6">
