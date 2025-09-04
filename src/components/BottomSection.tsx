@@ -110,6 +110,10 @@ export default function BottomSection() {
                     <div className="text-sm text-gray-500">
                         <p>{t("bottom.email")}</p>
                     </div>
+
+                    <div className="text-sm text-gray-500 bg-[#FDF5FF]">
+                        © 2025 kasuabuy. All rights reserved.
+                    </div>
                 </div>
             </div>
         </div>
