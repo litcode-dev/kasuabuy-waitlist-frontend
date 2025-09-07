@@ -206,15 +206,15 @@ export default function Home() {
         onClose={() => setShowLanguageModal(false)}
       />
 
-      {/* Floating Language Button */}
+      {/* Floating Language Button - Responsive */}
       <button
         onClick={() => setShowLanguageModal(true)}
-        className="fixed bottom-6 right-6 z-50 bg-purple-600 hover:bg-purple-700 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-purple-300 focus:ring-opacity-50"
+        className="fixed bottom-4 right-4 md:bottom-5 md:right-5 lg:bottom-8 lg:right-8 z-50 w-12 h-12 md:w-13 md:h-13 lg:w-16 lg:h-16 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg hover:shadow-xl md:shadow-xl lg:shadow-2xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-purple-300 focus:ring-opacity-50 flex items-center justify-center min-h-[44px] min-w-[44px] safe-area-inset-bottom safe-area-inset-right"
         aria-label="Change Language"
         title="Change Language"
       >
         <svg
-          className="w-6 h-6"
+          className="w-5 h-5 md:w-6 md:h-6 lg:w-8 lg:h-8"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -224,7 +224,7 @@ export default function Home() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9"
+            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9 9s4-9 9-9"
           />
         </svg>
       </button>
