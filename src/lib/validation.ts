@@ -95,6 +95,11 @@ export const waitlistSchema = z.object({
       const result = validateNigerianPhone(phone);
       return result.isValid ? result.normalized! : phone;
     }),
+  agent_id: z
+    .string()
+    .max(100, 'Agent name cannot exceed 100 characters')
+    .optional()
+    .or(z.literal('')),
   language: z.enum(['en', 'ha'], {
     message: 'Language selection is required',
   }),

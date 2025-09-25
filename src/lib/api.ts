@@ -3,6 +3,7 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://api.kasuabuy.co
 export interface WaitlistData {
   full_name: string;
   email?: string;
+  agent_id?: string;
   phone_number: string;
   language: string;
 }
@@ -18,6 +19,7 @@ export interface WaitlistEntry {
   id: number;
   full_name: string;
   email?: string;
+  agent_id?: string;
   phone_number: string;
   language: string;
   created_at: string;
