@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { User, Mail, Phone, Users, Loader2, CheckCircle } from 'lucide-react';
-import { useWaitlist } from '@/hooks/useWaitlist';
+import { useWaitlist } from '@/hooks/useWaitlist-2';
 import { useLanguage } from '@/hooks/useLanguage';
 import type { WaitlistFormData } from '@/lib/validation';
 

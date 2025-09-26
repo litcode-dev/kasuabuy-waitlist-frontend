@@ -30,10 +30,12 @@
     "name": "Name",
     "email": "Email",
     "phoneNumber": "Phone Number",
+   "agentId": "Agent ID",
     "optional": "optional",
     "namePlaceholder": "Full name",
     "emailPlaceholder": "Email address",
     "phonePlaceholder": "Phone number",
+     "agentIdPlaceholder": "Agent ID or referral code",
     "submit": "Join Waitlist",
     "submitting": "Joining..."
   },

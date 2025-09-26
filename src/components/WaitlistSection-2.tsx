@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { Loader2, CheckCircle, ArrowRight } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useWaitlist } from '@/hooks/useWaitlist';
+import { useWaitlist } from '@/hooks/useWaitlist-2';
 import { useLanguage } from '@/hooks/useLanguage';
 import type { WaitlistFormData } from '@/lib/validation';
 import Image from 'next/image';
@@ -23,7 +23,6 @@ export default function WaitlistSection() {
     full_name: '',
     email: '',
     phone_number: '',
-    agent_id: '',
     language: getCurrentLanguage(),
   });
 
@@ -48,7 +47,6 @@ export default function WaitlistSection() {
         full_name: '',
         email: '',
         phone_number: '',
-        agent_id: '',
         language: getCurrentLanguage(),
       });
     }
@@ -261,40 +259,13 @@ export default function WaitlistSection() {
             )}
           </motion.div>
 
-          {/* Agent ID Field */}
-          <motion.div
-            className="text-left"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <label className="block text-white text-sm font-medium mb-2">
-              {t('form.agentId')} <span className="text-gray-300 text-xs">({t('form.optional')})</span>
-            </label>
-            <input
-              type="text"
-              name="agent_id"
-              value={formData.agent_id}
-              onChange={handleInputChange}
-              placeholder={t('form.agentIdPlaceholder')}
-              className={`w-full px-6 py-4 text-[11px] lg:text-[14px] rounded-full border-0 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-base ${
-                errors.agent_id ? 'bg-red-50' : 'bg-white'
-              }`}
-              disabled={isSubmitting}
-            />
-            {errors.agent_id && (
-              <p className="mt-2 text-sm text-red-200">{errors.agent_id}</p>
-            )}
-          </motion.div>
-
           {/* Submit Button */}
           <motion.div
             className='flex flex-col items-center'
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
           >
 
           <button
