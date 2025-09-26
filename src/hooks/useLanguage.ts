@@ -22,7 +22,7 @@ export function useLanguage() {
       // Show language selection modal if no language is stored
       setShowLanguageModal(true);
     }
-  }, [router.isReady, router.locale]);
+  }, [router, router.isReady, router.locale]);
 
   const selectLanguage = (language: Language) => {
     // Store the selected language

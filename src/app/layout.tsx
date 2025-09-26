@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 
