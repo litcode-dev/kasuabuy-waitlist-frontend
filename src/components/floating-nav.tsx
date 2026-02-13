@@ -19,7 +19,7 @@ export const FloatingNav = ({
   className,
 }: {
 
-  className?: string;∏
+  className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
     const { t } = useTranslation('common');
@@ -29,7 +29,7 @@ export const FloatingNav = ({
 
 
   // Simplified scroll listener to prevent interference
-  useMotionValueEvent(scrollYProgress, "change", (current) => {
+  useMotionValueEvent(scrollYProgress, "change", (current: number) => {
     if (typeof current === "number") {
       // Always keep navigation visible to prevent scroll conflicts
       setVisible(true);
