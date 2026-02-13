@@ -6,7 +6,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import { useTranslation } from 'next-i18next';
 import { ArrowUpRight, X } from "lucide-react";
 import Image from "next/image";

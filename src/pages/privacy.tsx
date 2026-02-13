@@ -2,8 +2,8 @@ import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
-import { FloatingNav } from '@/components/floating-nav';
-import BottomSection from '@/components/BottomSection';
+import { FloatingNav } from '../components/floating-nav';
+import BottomSection from '../components/BottomSection';
 
 export default function Privacy() {
   const { t } = useTranslation('common');

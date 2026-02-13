@@ -2,13 +2,13 @@ import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 // import { useTranslation } from 'next-i18next';
-import { useLanguage } from '@/hooks/useLanguage';
-import LanguageModal from '@/components/LanguageModal';
-// import Header from '@/components/Header';
-import HeroSection from '@/components/HeroSection';
-import WaitlistSection from '@/components/WaitlistSection';
-import BottomSection from '@/components/BottomSection';
-import { FloatingNav } from '@/components/floating-nav';
+import { useLanguage } from '../hooks/useLanguage';
+import LanguageModal from '../components/LanguageModal';
+// import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
+import WaitlistSection from '../components/WaitlistSection';
+import BottomSection from '../components/BottomSection';
+import { FloatingNav } from '../components/floating-nav';
 
 export default function Home() {
 //   const { t } = useTranslation('common');

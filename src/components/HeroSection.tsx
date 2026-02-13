@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslation } from "next-i18next";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { CircleCheck } from "lucide-react";

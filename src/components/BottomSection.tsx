@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next";
 import { ArrowUpRight, Facebook, Instagram, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { TypewriterEffect } from "@/components/ui/typewriter-effect";
+import { TypewriterEffect } from "./ui/typewriter-effect";
 import Link from "next/link";
 
 export default function BottomSection() {
@@ -116,6 +116,10 @@ export default function BottomSection() {
                         <div className="flex gap-4">
                             <Link href="/privacy" className="hover:text-[#5F017B] transition-colors duration-300">
                                 Privacy Policy
+                            </Link>
+                            <span className="text-gray-300">|</span>
+                            <Link href="/terms" className="hover:text-[#5F017B] transition-colors duration-300">
+                                Terms & Conditions
                             </Link>
                         </div>
                     </div>
