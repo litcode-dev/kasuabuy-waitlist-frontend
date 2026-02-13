@@ -11,16 +11,19 @@ import { useTranslation } from 'next-i18next';
 import { ArrowUpRight, X } from "lucide-react";
 import Image from "next/image";
 
+import { useRouter } from 'next/router';
+
 // import { useSession } from "next-auth/react";
 
 export const FloatingNav = ({
   className,
 }: {
 
-  className?: string;
+  className?: string;∏
 }) => {
   const { scrollYProgress } = useScroll();
     const { t } = useTranslation('common');
+    const router = useRouter();
 
   const [visible, setVisible] = useState(true);
 
@@ -34,6 +37,11 @@ export const FloatingNav = ({
   });
 
    const scrollToSection = (sectionId: string) => {
+    if (router.pathname !== '/') {
+      router.push(`/#${sectionId}`);
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -43,7 +51,7 @@ export const FloatingNav = ({
     const navItems = [
     {
       name: t('header.brand'),
-      action: () => {}, // Removed automatic scroll to hero
+      action: () => router.push('/'), // Removed automatic scroll to hero
       icon: (
         <div className="flex items-center space-x-2">
           <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">

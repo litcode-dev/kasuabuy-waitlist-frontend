@@ -111,8 +111,13 @@ export default function BottomSection() {
                         <p>{t("bottom.email")}</p>
                     </div>
 
-                    <div className="text-sm text-gray-500 bg-[#FDF5FF]">
-                        © 2025 kasuabuy. All rights reserved.
+                    <div className="flex flex-col items-center gap-2 text-sm text-gray-500 bg-[#FDF5FF] py-4 w-full">
+                        <p>© 2025 kasuabuy. All rights reserved.</p>
+                        <div className="flex gap-4">
+                            <Link href="/privacy" className="hover:text-[#5F017B] transition-colors duration-300">
+                                Privacy Policy
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
