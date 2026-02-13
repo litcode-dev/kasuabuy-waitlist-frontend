@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { Loader2, CheckCircle, ArrowRight } from 'lucide-react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'motion/react';
 import { useWaitlist } from '../hooks/useWaitlist';
 import { useLanguage } from '../hooks/useLanguage';
 import type { WaitlistFormData } from '../lib/validation';

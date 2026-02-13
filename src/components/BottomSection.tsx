@@ -2,7 +2,7 @@
 
 import { useTranslation } from "next-i18next";
 import { ArrowUpRight, Facebook, Instagram, Linkedin } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Image from "next/image";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 import Link from "next/link";

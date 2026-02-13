@@ -3,7 +3,7 @@
 import { useTranslation } from "next-i18next";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { CircleCheck } from "lucide-react";
 
 export default function HeroSection() {
