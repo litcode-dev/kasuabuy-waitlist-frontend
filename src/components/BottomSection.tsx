@@ -40,7 +40,7 @@ export default function BottomSection() {
                         <TypewriterEffect
                             words={t("bottom.title")
                                 .split(" ")
-                                .map((word) => ({
+                                .map((word: string) => ({
                                     text: word,
                                     className: "text-gray-900",
                                 }))}

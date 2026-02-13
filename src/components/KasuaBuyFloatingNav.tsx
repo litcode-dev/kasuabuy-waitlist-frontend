@@ -23,7 +23,7 @@ export const KasuaBuyFloatingNav = ({
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);
 
-  useMotionValueEvent(scrollYProgress, 'change', (current) => {
+  useMotionValueEvent(scrollYProgress, 'change', (current: number) => {
     if (typeof current === 'number') {
     //   let direction = current! - scrollYProgress.getPrevious()!;
 
